@@ -329,7 +329,7 @@ a:hover, a:active, a:focus {
     left: -500px;
     width: 100%;
     overflow-y: auto;
-    transition: 0.8s;
+    transition: 0.5s;
   }
 }
 
