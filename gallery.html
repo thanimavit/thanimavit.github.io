@@ -1179,92 +1179,92 @@
         <div class="row">
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/1.jpg">
-              <img src="img/gallery/2010/1.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/1.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/2.jpg">
-              <img src="img/gallery/2010/2.jpg" lowsrc="img/Spinner.gif" alt="Bridge">
+              <img src="img/gallery/2010/2.jpg" alt="Bridge">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/3.jpg">
-              <img src="img/gallery/2010/3.jpg" lowsrc="img/Spinner.gif" alt="Tunnel">
+              <img src="img/gallery/2010/3.jpg" alt="Tunnel">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/4.jpg">
-              <img src="img/gallery/2010/4.jpg" lowsrc="img/Spinner.gif" alt="Coast">
+              <img src="img/gallery/2010/4.jpg" alt="Coast">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/5.jpg">
-              <img src="img/gallery/2010/5.jpg" lowsrc="img/Spinner.gif" alt="Rails">
+              <img src="img/gallery/2010/5.jpg" alt="Rails">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/6.jpg">
-              <img src="img/gallery/2010/6.jpg" lowsrc="img/Spinner.gif" alt="Traffic">
+              <img src="img/gallery/2010/6.jpg" alt="Traffic">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/7.jpg">
-              <img src="img/gallery/2010/7.jpg" lowsrc="img/Spinner.gif" alt="Rocks">
+              <img src="img/gallery/2010/7.jpg" alt="Rocks">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/8.jpg">
-              <img src="img/gallery/2010/8.jpg" lowsrc="img/Spinner.gif" alt="Benches">
+              <img src="img/gallery/2010/8.jpg" alt="Benches">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/9.jpg">
-              <img src="img/gallery/2010/9.jpg" lowsrc="img/Spinner.gif" alt="Sky">
+              <img src="img/gallery/2010/9.jpg" alt="Sky">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/10.jpg">
-              <img src="img/gallery/2010/10.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/10.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/11.jpg">
-              <img src="img/gallery/2010/11.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/11.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/12.jpg">
-              <img src="img/gallery/2010/12.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/12.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/13.jpg">
-              <img src="img/gallery/2010/13.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/13.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/14.jpg">
-              <img src="img/gallery/2010/14.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/14.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/15.jpg">
-              <img src="img/gallery/2010/15.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/15.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/16.jpg">
-              <img src="img/gallery/2010/16.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/16.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/17.jpg">
-              <img src="img/gallery/2010/17.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/17.jpg" alt="Park">
             </a>
           </div>
           <div class="col-xs-12 col-md-3">
             <a class="lightbox" href="img/gallery/2010/18.jpg">
-              <img src="img/gallery/2010/18.jpg" lowsrc="img/Spinner.gif" alt="Park">
+              <img src="img/gallery/2010/18.jpg" alt="Park">
             </a>
           </div>
         </div>
@@ -1343,6 +1343,37 @@
     baguetteBox.run('.tz-gallery');
   </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+var lazyloadImages = document.querySelectorAll("img.lazy");
+var lazyloadThrottleTimeout;
+
+function lazyload () {
+  if(lazyloadThrottleTimeout) {
+    clearTimeout(lazyloadThrottleTimeout);
+  }
+
+  lazyloadThrottleTimeout = setTimeout(function() {
+      var scrollTop = window.pageYOffset;
+      lazyloadImages.forEach(function(img) {
+          if(img.offsetTop < (window.innerHeight + scrollTop)) {
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+          }
+      });
+      if(lazyloadImages.length == 0) {
+        document.removeEventListener("scroll", lazyload);
+        window.removeEventListener("resize", lazyload);
+        window.removeEventListener("orientationChange", lazyload);
+      }
+  }, 20);
+}
+
+document.addEventListener("scroll", lazyload);
+window.addEventListener("resize", lazyload);
+window.addEventListener("orientationChange", lazyload);
+});
+</script>
 </body>
 
 </html>
