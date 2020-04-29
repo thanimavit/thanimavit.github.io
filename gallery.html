@@ -1268,7 +1268,10 @@
             </a>
           </div>
         </div>
-
+        <!-- Page-Loader -->
+        <div class="loader-container">
+          <div class="loader"></div>
+        </div>
       </div>
 
     </div>
@@ -1341,6 +1344,12 @@
   <!-- Gallery Image Slider-->
   <script>
     baguetteBox.run('.tz-gallery');
+  </script>
+
+  <script>
+  $("#gallery_2010").ready(function(){
+    $('.loader-container').fadeOut(250);
+  });
   </script>
 
 </body>
