@@ -143,7 +143,7 @@
       }
     })
   });
-  baguetteBox.run('.tz-gallery');
+
   AOS.init({
     duration: 600
   });
@@ -166,9 +166,5 @@
         items: 5
       }
     }
-  });
-
-  $(document).ready(function() {
-    $('[data-toggle="tooltip"]').tooltip();
   });
 })(jQuery);
