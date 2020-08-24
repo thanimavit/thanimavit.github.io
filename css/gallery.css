@@ -252,6 +252,10 @@ a:focus {
   text-align: center;
 }
 
+#navhead img {
+  width: 130px;
+}
+
 .navarrow {
   display: none;
 }
@@ -265,7 +269,7 @@ a:focus {
     bottom: 0;
     z-index: 998;
     background: rgba(6, 12, 34, 0.9);
-    left: -800px;
+    left: -1000px;
     width: 100%;
     overflow-y: auto;
     transition: 0.5s;
@@ -384,27 +388,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #0e1b4d;
 }
 
-/*Gallery*/
-.tz-gallery {
-  padding: 30px;
-}
-
-.tz-gallery .lightbox img {
-  width: 100%;
-  margin-bottom: 30px;
-  transition: 0.2s ease-in-out;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-.tz-gallery .lightbox img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-.tz-gallery img {
-  border-radius: 4px;
-}
-
 /* Footer */
 #footer {
   background: #101522;
@@ -485,19 +468,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .nocontent1,
-.nocontent2,
-.nocontent3,
-.nocontent4,
-.nocontent5 {
+.nocontent2 {
   width: 100%;
   height: 600px;
 }
 
 .nocontent1 h1,
-.nocontent2 h1,
-.nocontent3 h1,
-.nocontent4 h1,
-.nocontent5 h1 {
+.nocontent2 h1 {
   text-align: center;
   line-height: 600px;
 }
@@ -508,18 +485,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .nocontent2 {
   background-color: #E8E8E8;
-}
-
-.nocontent3 {
-  background-color: #F0F0F0;
-}
-
-.nocontent4 {
-  background-color: #F5F5F5;
-}
-
-.nocontent5 {
-  background-color: #F8F8F8;
 }
 
 /* Back-to-Top button */
@@ -558,4 +523,42 @@ body.mobile-nav-active #mobile-nav-toggle {
 .back-to-top:hover {
   background: #e0072f;
   color: #fff;
+}
+
+/* Hide Plugin Watermark */
+.hideEmbedTop {
+  width: 100%;
+  height: 82px;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 2px;
+}
+
+.hideEmbedBottom {
+  width: 30%;
+  height: 40px;
+  position: relative;
+  bottom: 60px;
+  float: right;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .hideEmbedBottom {
+    width: 100%;
+    height: 35px;
+    position: relative;
+    margin-top: -40px;
+    background-color: #fff;
+  }
+}
+
+@media screen and (width: 768px) {
+  .hideEmbedBottom {
+    width: 45%;
+    height: 35px;
+    position: absolute;
+    bottom: 14%;
+    background-color: #fff;
+  }
 }
