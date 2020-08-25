@@ -27,6 +27,10 @@
 </head>
 
 <body>
+  <!--Preloader -->
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
   <!-- Modal Box -->
   <div id="regModal" class="modal fade">
     <div class="modal-dialog modal-dialog-centered">
@@ -63,13 +67,10 @@
             <a href="#guests"><i class="fa fa-angle-right navarrow"></i> Guests</a>
           </li>
           <li>
-            <a href="#games"><i class="fa fa-angle-right navarrow"></i> Games</a>
+            <a href="#games"><i class="fa fa-angle-right navarrow"></i> Contests</a>
           </li>
           <li>
             <a href="#calendar"><i class="fa fa-angle-right navarrow"></i> Calendar</a>
-          </li>
-          <li>
-            <a href="#schedule"><i class="fa fa-angle-right navarrow"></i> Schedule 2020</a>
           </li>
           <li>
             <a href="#gallery"><i class="fa fa-angle-right navarrow"></i> Gallery</a>
@@ -383,7 +384,7 @@
     <section id="games" class="games scrollspy">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
-          <h2>Contests & Games</h2>
+          <h2>Contests</h2>
           <p>
             Here is a brief summary of our Contests. Detailed description will
             be announced soon.
@@ -458,7 +459,7 @@
             <ul class="nav nav-tabs">
               <li class="nav-item">
                 <a class="nav-link active" data-toggle="tab" href="#tab-1">
-                  <h4>Pookkalam Competition</h4>
+                  <h4>Ponnonam Poovonam - പൊന്നോണം പൂവോണം</h4>
                   <p>
                     Pookalam or the flower carpet has always been an integral part of the Onam tradition. Capture the very essence of this colorful ensemble of flowers in a photograph and win exciting prizes.
                   </p>
@@ -466,7 +467,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>Traditional Dress Competition</h4>
+                  <h4>Onachamayam - ഓണച്ചമയം</h4>
                   <p>
                     Being the best dressed is a compliment we all love to
                     hear. So this Thanima , get your settu sarees, mundu and
@@ -478,7 +479,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab-3">
-                  <h4>Sadhya Presentation</h4>
+                  <h4>Ila Ready - ഇല റെഡി</h4>
                   <p>Way to a person’s heart is through their stomach and for us Malayalees, traditional SADHYA is definitely the way. This Onam, record a video presenting the mouth-watering sadhya and get yourself a chance to win an amazing prize.
                   </p>
                 </a>
@@ -1075,6 +1076,12 @@
 
   <!-- other JS Files -->
   <script src="other/jquery/jquery.min.js"></script>
+    <!-- Preloader script -->
+  <script>
+    $(window).on("load",function(){
+      $(".loader-container").fadeOut("slow");
+    });
+  </script>
   <script src="other/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="other/jquery.easing/jquery.easing.min.js"></script>
   <script src="other/php-email-form/validate.js"></script>

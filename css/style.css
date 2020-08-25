@@ -41,6 +41,74 @@ h6 {
   padding: 0;
   color: #0e1b4d;
 }
+/*Pre-Loader*/
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #06091a;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  padding: 0px;
+  opacity: 0.5;
+  border: 3px solid #fff;
+  -webkit-animation: loader 1s ease-in-out infinite alternate;
+  animation: loader 1s ease-in-out infinite alternate;
+}
+
+.loader:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px solid #fff;
+}
+
+.loader:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px solid #fff;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg) scale(1, 1);
+    border-radius: 0px;
+  }
+
+  to {
+    transform: rotate(360deg) scale(0, 0);
+    border-radius: 50px;
+  }
+}
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg) scale(1, 1);
+    border-radius: 0px;
+  }
+
+  to {
+    -webkit-transform: rotate(360deg) scale(0, 0);
+    border-radius: 50px;
+  }
+}
 
 /* Header */
 #header {
@@ -931,95 +999,6 @@ tr:first-child td {
   background-color: #060c22;
   color: white;
   font-size: 40px;
-}
-
-/* Schedule Section */
-#schedule {
-  padding: 60px 0 60px 0;
-}
-
-#schedule .nav-tabs {
-  text-align: center;
-  margin: auto;
-  display: block;
-  border-bottom: 0;
-  margin-bottom: 30px;
-}
-
-#schedule .nav-tabs li {
-  display: inline-block;
-  margin-bottom: 0;
-}
-
-#schedule .nav-tabs a {
-  border: none;
-  border-radius: 50px;
-  font-weight: 600;
-  background-color: #0e1b4d;
-  color: #fff;
-  padding: 10px 100px;
-}
-
-@media screen and (max-width: 991px) {
-  #schedule .nav-tabs a {
-    padding: 8px 60px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #schedule .nav-tabs a {
-    padding: 8px 50px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #schedule .nav-tabs a {
-    padding: 8px 30px;
-  }
-}
-
-#schedule .nav-tabs a.active {
-  background-color: #f82249;
-  color: #fff;
-}
-
-#schedule .tab-pane {
-  transition: ease-in-out .2s;
-}
-
-#schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  transition: background-color ease-in-out 0.3s;
-}
-
-#schedule .schedule-item:hover {
-  background-color: #fff;
-}
-
-#schedule .schedule-item time {
-  padding-bottom: 5px;
-  display: inline-block;
-}
-
-#schedule .schedule-item h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-#schedule .schedule-item h4 span {
-  font-style: italic;
-  color: #19328e;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-#schedule .schedule-item p {
-  font-style: italic;
-  color: #152b79;
-  margin-bottom: 0;
 }
 
 /* Testimonials Section */

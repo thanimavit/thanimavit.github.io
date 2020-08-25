@@ -25,6 +25,10 @@
   </head>
 
   <body>
+    <!--Preloader -->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     <!-- Modal Box -->
     <div id="regModal" class="modal fade">
       <div class="modal-dialog modal-dialog-centered">
@@ -75,17 +79,12 @@
             </li>
             <li>
               <a href="index.html#games"
-                ><i class="fa fa-angle-right navarrow"></i> Games</a
+                ><i class="fa fa-angle-right navarrow"></i> Contests</a
               >
             </li>
             <li>
               <a href="index.html#calendar"
                 ><i class="fa fa-angle-right navarrow"></i> Calendar</a
-              >
-            </li>
-            <li>
-              <a href="index.html#schedule"
-                ><i class="fa fa-angle-right navarrow"></i> Schedule 2020</a
               >
             </li>
             <li>
@@ -342,6 +341,12 @@
 
     <!-- other JS Files -->
     <script src="other/jquery/jquery.min.js"></script>
+    <!-- Preloader script -->
+  <script>
+    $(window).on("load",function(){
+      $(".loader-container").fadeOut("slow");
+    });
+  </script>
     <script src="other/jquery.easing/jquery.easing.min.js"></script>
     <script src="other/bootstrap/bootstrap3.4.1/bootstrap.min.js"></script>
     <script src="other/venobox/venobox.min.js"></script>
